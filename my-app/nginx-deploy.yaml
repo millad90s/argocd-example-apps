@@ -10,7 +10,6 @@ spec:
   selector:
     matchLabels:
       app: nginx-deploy
-  strategy: {}
   template:
     metadata:
       creationTimestamp: null
@@ -22,5 +21,3 @@ spec:
         name: nginx
         ports:
         - containerPort: 80
-        resources: {}
-status: {}
