@@ -42,3 +42,4 @@ applications:
   - name: sock-shop
   - name: sync-waves
   - name: hello-api
+  - name: hello-api-2
