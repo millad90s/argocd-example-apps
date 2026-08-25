@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api-2
+  labels:
+    app: hello-api-2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api-2
+  template:
+    metadata:
+      labels:
+        app: hello-api-2
+    spec:
+      containers:
+        - name: hello-api-2
+          image: nginxdemos/hello:latest
+          ports:
+            - containerPort: 8080
